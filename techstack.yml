@@ -1,0 +1,173 @@
+repo_name: paulocheloni/go-gql
+report_id: af10d1862a7396bf2fa706309589d335
+version: 0.1
+repo_type: Public
+timestamp: '2024-07-29T14:31:03+00:00'
+requested_by: paulocheloni
+provider: github
+branch: main
+detected_tools_count: 12
+tools:
+- name: Golang
+  description: An open source programming language that makes it easy to build simple,
+    reliable, and efficient software
+  website_url: http://golang.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source_url: https://github.com/paulocheloni/go-gql
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/paulocheloni/go-gql
+  detection_source: Repo Metadata
+- name: go-sqlite3
+  description: Sqlite3 driver for go using database/sql
+  package_url: https://pkg.go.dev/github.com/mattn/go-sqlite3
+  version: 1.14.16
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
+- name: golang-lru
+  description: Golang LRU cache
+  package_url: https://pkg.go.dev/github.com/hashicorp/golang-lru
+  version: 0.5.4
+  license: MPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
+- name: google/uuid
+  description: 'Go package for UUIDs based on RFC 4122 and DCE 1.1: Authentication
+    and Security Services'
+  package_url: https://pkg.go.dev/github.com/google/uuid
+  version: 1.3.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
+- name: gqlgen
+  description: Go generate based graphql server library
+  package_url: https://pkg.go.dev/github.com/99designs/gqlgen
+  version: 0.17.24
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
+- name: mapstructure
+  description: Go library for decoding generic map values into native Go structures
+  package_url: https://pkg.go.dev/github.com/mitchellh/mapstructure
+  version: 1.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
+- name: smetrics
+  description: String metrics library written in Go
+  package_url: https://pkg.go.dev/github.com/xrash/smetrics
+  version: 0.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
+- name: sys
+  description: Go packages for low-level interaction with the operating system
+  package_url: https://pkg.go.dev/golang.org/x/sys
+  version: 0.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
+- name: text
+  description: Go text processing support
+  package_url: https://pkg.go.dev/golang.org/x/text
+  version: 0.3.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
+- name: tools
+  description: Go Tools
+  package_url: https://pkg.go.dev/golang.org/x/tools
+  version: 0.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
+- name: websocket
+  description: A fast
+  package_url: https://pkg.go.dev/github.com/gorilla/websocket
+  version: 1.5.0
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/paulocheloni/go-gql/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: paulocheloni
+  last_updated_on: 2023-02-18 16:37:04.000000000 Z
