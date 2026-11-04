@@ -3,11 +3,51 @@ package database
 import (
 	"database/sql"
 	"errors"
+	"path/filepath"
 	"testing"
 
 	"github.com/google/uuid"
 	_ "github.com/mattn/go-sqlite3"
 )
+
+func TestMigrateCreatesCatalogOnEmptyFile(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "data.db")
+	db, err := sql.Open("sqlite3", path)
+	if err != nil {
+		t.Fatalf("open database: %v", err)
+	}
+	t.Cleanup(func() { db.Close() })
+
+	if err := Migrate(db); err != nil {
+		t.Fatalf("first migrate: %v", err)
+	}
+	if err := Migrate(db); err != nil {
+		t.Fatalf("second migrate: %v", err)
+	}
+
+	created, err := NewCategory(db).Create("Tecnologia", "curso de tech")
+	if err != nil {
+		t.Fatalf("create category: %v", err)
+	}
+	if _, err := NewCourse(db).Create("Full Cycle", "the best", created.ID); err != nil {
+		t.Fatalf("create course: %v", err)
+	}
+
+	categories, err := NewCategory(db).FindAll()
+	if err != nil {
+		t.Fatalf("find categories: %v", err)
+	}
+	if len(categories) != 1 || categories[0].Name != "Tecnologia" {
+		t.Fatalf("categories = %+v", categories)
+	}
+	courses, err := NewCourse(db).FindByCategoryId(created.ID)
+	if err != nil {
+		t.Fatalf("find courses: %v", err)
+	}
+	if len(courses) != 1 || courses[0].Name != "Full Cycle" || courses[0].CategoryID != created.ID {
+		t.Fatalf("courses = %+v", courses)
+	}
+}
 
 func openTestDB(t *testing.T) *sql.DB {
 	t.Helper()
